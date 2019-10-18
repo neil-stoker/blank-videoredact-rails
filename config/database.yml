@@ -24,6 +24,8 @@ default: &default
 development:
   <<: *default
   database: blank-videoredact-rails_development
+  username: blank_videoredact_rails_dev
+  password: changeme
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +60,8 @@ development:
 test:
   <<: *default
   database: blank-videoredact-rails_test
+  username: blank_videoredact_rails_dev
+  password: changeme
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
